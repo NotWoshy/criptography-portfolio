@@ -5,17 +5,22 @@
   box-sizing: border-box;
 }
 
-
-
+.icon {
+  height: 24px;
+  width: auto;
+  transition: filter 0.3s ease;
+  filter: invert(0%);
+}
 
 body {
   font-family: 'IBM Plex Mono', monospace;
-  background-color: #fff;
+  background-color: #f5f5f5;
   color: #000;
   line-height: 1.6;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* Header */
@@ -38,16 +43,40 @@ body {
   display: block;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.divider {
+  border-left: 1px solid #ccc;
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
+}
 
 .nav a {
   text-decoration: none;
   color: #555;
-  margin-left: 16px;
+  margin-left: 0px;
   transition: color 0.3s ease;
 }
 
 .nav a:hover {
   color:rgb(22, 22, 22);
+}
+
+.theme-icon {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  height: 35px;
+  width: auto;
+  cursor: pointer;
+  z-index: 1000; 
+  filter: invert(0%);
+  transition: filter 0.5s ease;
 }
 
 /* Intro section */
@@ -212,7 +241,7 @@ body {
 }
 
 .column {
-  background-color: #f7f7f7;
+  background-color:rgb(240, 240, 240);
   padding: 20px;
   border: 1px solid #ddd;
   text-align: justify;
@@ -223,7 +252,7 @@ body {
 }
 
 .column-image .image-game{
-  margin: 10px auto 0 auto;
+  margin: 35px auto 0 auto;
   height: 100px; 
   width: auto;  
   display: block;
@@ -377,3 +406,77 @@ img {
     padding: 16px;
   }
 }
+
+/* Dark mode*/
+
+.darkmode body {
+  background-color: #4A4A4A;
+  color: #f2f0ef;
+}
+.dark-mode .theme-icon {
+  filter: invert(100%);
+}
+
+.dark-mode .icon {
+  filter: invert(100%);
+}
+
+body.dark-mode .theme-icon {
+  filter: invert(100%);
+}
+
+body.dark-mode .theme-icon {
+  filter: brightness(1.2);
+  filter: invert(100%);
+}
+
+body.dark-mode {
+  background-color: #212121;
+  color: #f2f0ef;
+}
+
+body.dark-mode .divider {
+  border-left: 1px solid #ccc;
+}
+
+body.dark-mode .nav a {
+  color: #ccc;
+}
+
+body.dark-mode .nav a:hover {
+  color: #fff;
+}
+
+body.dark-mode .column {
+  background-color:rgb(43, 43, 43);
+  border-color: #444;
+}
+
+body.dark-mode .subtext {
+  color: #ccc;
+}
+
+body.dark-mode .contact-links a,
+body.dark-mode .text-with-icon a {
+  color: #ccc;
+}
+
+body.dark-mode .contact-links a:hover,
+body.dark-mode .text-with-icon a:hover {
+  color: #fff;
+}
+
+body.dark-mode .footer {
+  background-color: #f2f0ef;
+  color: #aaa;
+}
+
+body.dark-mode .footer a,
+body.dark-mode .footer span {
+  color: #212121
+}
+
+body.dark-mode .footer a:hover {
+  text-decoration: underline;
+}
+
