@@ -1,50 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Portafolio de Tona Soto</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tona Soto | Portfolio</title>
+  <link rel="icon" type="image/png" href="./resources/icons/planta.png">
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Tona Soto</h1>
-    <nav>
-      <a href="#">Inicio</a>
+
+  <header class="header">
+    <div class="logo">
+      <img src="/resources/icons/planta.png" alt="Logo" />
+    </div>
+    <nav class="nav">
+      <a href="">Inicio</a>
     </nav>
   </header>
 
-  <main>
-    <section class="intro">
-      <h2>Hola,</h2>
-      <p>Mi nombre es Tonatiuh Soto Martínez, estudiante de la Escuela Superior de Cómputo.</p>
-      <p>Página creada para el curso de criptografía 2025.</p>
-    </section>
+    <main class="intro-section">
+        <div class="intro-content">
+            <div class="photo-placeholder">
+                <img src="/resources/images/Yop.jpg" alt="Foto" />
+            </div>
+            <div class="intro-text">
+                <h1>Hola!</h1>
+                <p>Soy Tonatiuh Soto Martínez, estudiante de la Escuela Superior de Cómputo del IPN.</p>
+                <p class="subtext"> Email: tonasotomtz@gmail.com</p>
+                <div class="text-with-icon">
+                    <img src="/resources/icons/documento.png" alt="Documento" class="icon"/>
+                    <a href="./resources/file/CV_SMT_Es.pdf" download="CV_SMT_Es">Curriculum Vitae</a>
+                </div>
+                    <div class="text-with-icon">
+                    <img src="/resources/icons/desbloqueado.png" alt="Desbloquear" class="icon"/>
+                    <a href="">Llave publica</a> <!-- Agregar descarga de llave -->
+                </div>
+                
+            </div>
+            <div class="contact-links">
+                <h2>Contacto</h2>
+                <ul>
+                    <li><a href="mailto:tonasotomtz@gmail.com" target="_blank">Correo</a></li>
+                    <li><a href="https://www.instagram.com/_.woshy/" target="_blank">Instagram</a></li>
+                    <li><a href="https://open.spotify.com/user/3wp7rpwozo8uh6bh0i7zhip66" target="_blank" class="spotify">Spotify</a></li>
+                    <li><a href="https://github.com/NotWoshy" target="_blank">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
 
-    <section class="trabajos">
-      <h2>Trabajos recientes</h2>
-      <div class="grid">
-        <div class="item">LUX</div>
-        <div class="item">PVE Brochure</div>
-        <div class="item">Visual Food Guide</div>
-        <div class="item">TAKAME</div>
-        <!-- Aquí puedes agregar más -->
+  <section class="section">
+    <h2>Trayectoria académica</h2>
+    <div class="subtitle-text">
+      
+      <div class="subtitle-with-icon">
+        <img src="/resources/icons/hoja.png" alt="Hoja" class="icon"/>
+        <h1>Escuela Superior de Cómputo     |  2022 - Actualidad</h1>
       </div>
-    </section>
-
-    <section class="trabajos">
-      <h2>Más trabajos</h2>
-      <div class="grid">
-        <div class="item">Proyecto A</div>
-        <div class="item">Proyecto B</div>
-        <div class="item">Proyecto C</div>
-        <div class="item">Proyecto D</div>
+        <p> Actualmente curso el séptimo semestre en esta institución. También, estoy realizando mi 
+            servicio social desarrollando una aplicación para controlar un vehículo mediante Bluetooth.</p>
+      
+          <div class="subtitle-with-icon">
+        <img src="/resources/icons/hoja.png" alt="Hoja" class="icon"/>
+        <h1>Universidad del Valle de México | 2017 - 2020</h1>
       </div>
-    </section>
-  </main>
+        <p>El lugar donde aprendí muchas de las cosas que utilizo en la carrera, desde cálculo
+          hasta algo de programación. Me ayudó a decidirme por la carrera de ingeniería en sistemas.</p>
+      
+      <div class="subtitle-with-icon">
+        <img src="/resources/icons/hoja.png" alt="Hoja" class="icon"/>
+        <h1>Instituto Cumbres               | ? - 2017</h1>
+      </div>
+        <p> Mi escuela donde cursé toda primaria y secundaria. Durante mi estancia, 
+            adquirí un buen nivel de inglés que me abrió muchas oportunidades.</p>
+    </div>
+</section>
 
-  <footer>
-    <p>Copyright © 2011, Dinh Thi Thuy Truc</p>
-    <p><a href="mailto:thuytruc.dinh@gmail.com">thuytruc.dinh@gmail.com</a> | (+84) 903 021 288 | <a href="#">in</a> | <a href="#">be</a></p>
+  <section class="section">
+    <h2>Pasatiempos</h2>
+
+    <div class="columns">
+      <div class="column">
+        <div class="subtitle-with-icon-column">
+          <img src="/resources/icons/musica.png" alt="Música" class="icon"/>
+          <h1>Música</h1>
+        </div>
+        <p> Me gusta escuchar música mientras hago trabajos o tareas. 
+            Actualmente mis géneros favoritos son el Indie y el Hip Hop.</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2Tt0lBrZ7g8kmtkSwjD6yP?utm_source=generator&theme=0" 
+          width="100%" height="152" frameBorder="0" allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+
+      <div class="column">
+        <div class="subtitle-with-icon-column">
+          <img src="/resources/icons/espada.png" alt="Espada" class="icon"/>
+          <h1>Videojuegos</h1>
+        </div>
+          <p> En mis tiempos libres, me gusta jugar videojuegos. Ultimamente 
+              he estado jugando este juego de cartas llamado:</p>
+          <div class="column-image">
+            <img src="./resources/images/juego.png" alt="Balatro" class="image-game">
+          </div>
+      </div>
+
+      <div class="column">
+        <div class="subtitle-with-icon-column">
+          <img src="/resources/icons/corazon.png" alt="Corazón" class="icon"/>
+          <h1>Instrumento</h1>
+        </div>
+          <p> Se tocar la guitarra, y estoy aprendiendo a tocar el ukulele.
+              En un futuro me gustaria aprender a tocar el teclado.
+          </p>
+          <div class="column-image">
+            <img src="./resources/images/ukelele.png" alt="Ukulele" class="image-instrument">
+          </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section">
+    <h2>Criptografía</h2>
+    <div class="subtitle-text">
+      
+      <div class="entry">
+        <div class="text-content">
+          <div class="subtitle-with-icon">
+            <img src="/resources/icons/cerrar.png" alt="Candado" class="icon" />
+              <h1>Criptografía = Arma</h1>
+          </div>
+          <p> Durante la Guerra Fría, la criptografía fuerte era considerada material militar. 
+              Exportar software cifrado estaba prohibido, al igual que venderlo fuera de EE. UU.</p>
+        </div>
+        <img src="./resources/images/guerra-fria.jpeg" alt="Guerra fria" class="entry-image" />
+      </div>
+
+      
+      <div class="entry">
+        <div class="text-content">
+          <div class="subtitle-with-icon">
+            <img src="/resources/icons/cerrar.png" alt="Candado" class="icon"/>
+            <h1>Kryptos</h1>
+          </div>
+            <p> En el cuartel general de la CIA en Langley hay una escultura llamada Kryptos, 
+                que contiene un mensaje encriptado. Desde su instalación en 1990, una parte sigue sin ser descifrada.</p>
+        </div>
+        <img src="./resources/images/kryptos.jpg" alt="Kryptos" class="entry-image" />
+      </div>
+      
+      <div class="entry">
+        <div class="text-content">
+          <div class="subtitle-with-icon">
+            <img src="/resources/icons/cerrar.png" alt="Candado" class="icon"/>
+            <h1>La criptografía está en todos lados</h1>
+          </div>
+          <p> Existen ejemplos famosos de esteganografía, el arte de ocultar mensajes dentro de imágenes o textos, 
+              incluso en manuscritos antiguos como el Manuscrito Voynich, aún sin descifrar del todo.</p>
+          </div>
+          <img src="./resources/images/voynich.png" alt="Voynich" class="entry-image" />
+      </div>
+    </div>
+</section>
+
+  <footer class="footer">
+    <span>© 2025 Tonatiuh Soto</span>
+    <div>
+      <a href="mailto:tonasotomtz@gmail.com">tonasotomtz@gmail.com</a>
+      <span>|</span>
+      <a href="https://www.instagram.com/_.woshy/">Instagram</a>
+      <span>|</span>
+      <a href="https://open.spotify.com/user/3wp7rpwozo8uh6bh0i7zhip66">Spotify</a>
+      <span>|</span>
+      <a href="https://github.com/NotWoshy">Github</a>
+    </div>
   </footer>
+
 </body>
 </html>
